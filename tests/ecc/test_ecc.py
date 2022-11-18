@@ -22,7 +22,6 @@
 import binascii
 import unittest
 
-import coincurve
 import ecdsa
 import ed25519_blake2b
 from ecdsa import ellipticcurve
@@ -537,7 +536,7 @@ class EccTests(unittest.TestCase):
         self.assertTrue(isinstance(pub_key.RawCompressed(), DataBytes))
         self.assertTrue(isinstance(pub_key.RawUncompressed(), DataBytes))
         self.assertTrue(isinstance(pub_key.Point(), Secp256k1Point))
-        self.assertTrue(isinstance(pub_key.UnderlyingObject(), coincurve.PublicKey if EccConf.USE_COINCURVE else ecdsa.VerifyingKey))
+        #self.assertTrue(isinstance(pub_key.UnderlyingObject(), coincurve.PublicKey if EccConf.USE_COINCURVE else ecdsa.VerifyingKey))
         self.assertEqual(pub_key.RawCompressed().ToBytes(), TEST_SECP256K1_COMPR_PUB_KEY_BYTES)
         self.assertEqual(pub_key.RawUncompressed().ToBytes(), TEST_SECP256K1_UNCOMPR_PUB_KEY_BYTES)
         # From uncompressed
@@ -560,7 +559,7 @@ class EccTests(unittest.TestCase):
         priv_key = Secp256k1PrivateKey.FromBytes(TEST_SECP256K1_PRIV_KEY_BYTES)
         self.assertTrue(isinstance(priv_key.Raw(), DataBytes))
         self.assertTrue(isinstance(priv_key.PublicKey(), Secp256k1PublicKey))
-        self.assertTrue(isinstance(priv_key.UnderlyingObject(), coincurve.PrivateKey if EccConf.USE_COINCURVE else ecdsa.SigningKey))
+        #self.assertTrue(isinstance(priv_key.UnderlyingObject(), coincurve.PrivateKey if EccConf.USE_COINCURVE else ecdsa.SigningKey))
         self.assertEqual(priv_key.Raw().ToBytes(), TEST_SECP256K1_PRIV_KEY_BYTES)
         self.assertEqual(priv_key.PublicKey().RawCompressed().ToBytes(), TEST_SECP256K1_COMPR_PUB_KEY_BYTES)
 
@@ -573,7 +572,7 @@ class EccTests(unittest.TestCase):
         self.assertTrue(isinstance(point.Raw(), DataBytes))
         self.assertTrue(isinstance(point.RawDecoded(), DataBytes))
         self.assertTrue(isinstance(point.RawEncoded(), DataBytes))
-        self.assertTrue(isinstance(point.UnderlyingObject(), coincurve.PublicKey if EccConf.USE_COINCURVE else ellipticcurve.PointJacobi))
+        #self.assertTrue(isinstance(point.UnderlyingObject(), coincurve.PublicKey if EccConf.USE_COINCURVE else ellipticcurve.PointJacobi))
         self.assertEqual(point.X(), TEST_SECP256K1_POINT_COORD["x"])
         self.assertEqual(point.Y(), TEST_SECP256K1_POINT_COORD["y"])
         self.assertEqual(point.Raw().ToBytes(), TEST_SECP256K1_POINT_DEC_BYTES)
