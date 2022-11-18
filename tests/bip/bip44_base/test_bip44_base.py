@@ -22,12 +22,12 @@
 import binascii
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     Bip32KeyData, Bip32KeyError, Bip44Changes, Bip44Coins, Bip44DepthError, Bip44Levels, Bip44PrivateKey,
     Bip44PublicKey, Bip49Coins, CardanoShelley, Cip1852Coins, Monero
 )
-from bip_utils.bip.bip32.bip32_key_data import Bip32KeyDataConst
-from bip_utils.bip.conf.common import BipCoinConf
+from bip_utils_m1.bip.bip32.bip32_key_data import Bip32KeyDataConst
+from bip_utils_m1.bip.conf.common import BipCoinConf
 
 
 ZERO_CHAIN_CODE = b"\x00" * Bip32KeyDataConst.CHAINCODE_BYTE_LEN

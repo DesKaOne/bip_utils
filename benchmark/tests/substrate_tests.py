@@ -20,7 +20,7 @@
 
 
 # Imports
-from bip_utils import Substrate, SubstrateCoins
+from bip_utils_m1 import Substrate, SubstrateCoins
 from tests.benchmark_tests_base import BenchmarkTestsBase
 
 

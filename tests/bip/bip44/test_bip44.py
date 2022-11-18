@@ -19,7 +19,7 @@
 # THE SOFTWARE.
 
 # Imports
-from bip_utils import Bip44, Bip44Coins, Bip44Conf, Bip49Coins, Bip84Coins, Bip86Coins, Cip1852Coins
+from bip_utils_m1 import Bip44, Bip44Coins, Bip44Conf, Bip49Coins, Bip84Coins, Bip86Coins, Cip1852Coins
 from tests.bip.bip32.test_bip32_base import TEST_SEED
 from tests.bip.bip44_base.test_bip44_base import Bip44BaseTests
 

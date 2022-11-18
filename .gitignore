@@ -12,7 +12,7 @@ eggs/
 sdist/
 *.egg-info/
 *.egg
-bip_utils-*/
+bip_utils_m1-*/
 
 # Unit test / Coverage reports
 htmlcov

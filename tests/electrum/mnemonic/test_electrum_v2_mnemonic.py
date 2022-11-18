@@ -23,12 +23,12 @@ import binascii
 import math
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     BytesUtils, ElectrumV2EntropyBitLen, ElectrumV2EntropyGenerator, ElectrumV2Languages, ElectrumV2MnemonicDecoder,
     ElectrumV2MnemonicGenerator, ElectrumV2MnemonicTypes, ElectrumV2MnemonicValidator, ElectrumV2SeedGenerator,
     ElectrumV2Segwit, ElectrumV2Standard, ElectrumV2WordsNum
 )
-from bip_utils.electrum.mnemonic_v2.electrum_v2_mnemonic import ElectrumV2MnemonicConst
+from bip_utils_m1.electrum.mnemonic_v2.electrum_v2_mnemonic import ElectrumV2MnemonicConst
 
 
 # Verified with the official Electrum wallet

@@ -22,8 +22,8 @@
 import binascii
 import unittest
 
-from bip_utils import Base58ChecksumError, Bip38Decrypter, Bip38EcKeysGenerator, Bip38Encrypter, Bip38PubKeyModes
-from bip_utils.bip.bip38.bip38_ec import Bip38EcConst
+from bip_utils_m1 import Base58ChecksumError, Bip38Decrypter, Bip38EcKeysGenerator, Bip38Encrypter, Bip38PubKeyModes
+from bip_utils_m1.bip.bip38.bip38_ec import Bip38EcConst
 
 
 # Tests for decoding from BIP38 page (with EC multiplication)

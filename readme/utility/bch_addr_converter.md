@@ -4,7 +4,7 @@ The Bitcoin Cash address converter library allows converting Bitcoin Cash addres
 
 **Code example**
 
-    from bip_utils import BchAddrConverter
+    from bip_utils_m1 import BchAddrConverter
 
     # Convert address by change the HRP (the old net version is maintained)
     conv_addr = BchAddrConverter.Convert("bitcoincash:qp90dvzptg759efdcd93s4dkdw0vuhlkmqlch7letq", hrp="ergon")

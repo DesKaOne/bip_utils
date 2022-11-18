@@ -1,4 +1,4 @@
-bip_utils
+bip_utils_m1
 =========
 .. toctree::
    :maxdepth: 10

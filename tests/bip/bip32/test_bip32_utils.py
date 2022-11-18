@@ -21,7 +21,7 @@
 # Imports
 import unittest
 
-from bip_utils import Bip32KeyIndex, Bip32Utils
+from bip_utils_m1 import Bip32KeyIndex, Bip32Utils
 
 
 #

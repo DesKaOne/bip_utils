@@ -22,7 +22,7 @@
 import binascii
 import unittest
 
-from bip_utils import DataBytes
+from bip_utils_m1 import DataBytes
 
 
 # Test vector

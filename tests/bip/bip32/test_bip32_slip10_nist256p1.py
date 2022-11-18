@@ -21,8 +21,8 @@
 # Imports
 import binascii
 
-from bip_utils import Bip32KeyIndex, Bip32Nist256p1, Bip32Slip10Nist256p1, EllipticCurveTypes
-from bip_utils.bip.bip32.slip10.bip32_slip10_mst_key_generator import Bip32Slip10MstKeyGeneratorConst
+from bip_utils_m1 import Bip32KeyIndex, Bip32Nist256p1, Bip32Slip10Nist256p1, EllipticCurveTypes
+from bip_utils_m1.bip.bip32.slip10.bip32_slip10_mst_key_generator import Bip32Slip10MstKeyGeneratorConst
 from tests.bip.bip32.test_bip32_base import Bip32BaseTests
 from tests.bip.bip32.test_bip32_slip10_secp256k1 import TEST_VECT_EX_KEY_ERR
 

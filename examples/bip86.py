@@ -1,6 +1,6 @@
 """Example of keys derivation using BIP86."""
 
-from bip_utils import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum, Bip44Changes, Bip86, Bip86Coins
+from bip_utils_m1 import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum, Bip44Changes, Bip86, Bip86Coins
 
 
 ADDR_NUM: int = 5

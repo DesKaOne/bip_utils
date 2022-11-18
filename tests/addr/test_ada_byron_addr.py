@@ -21,7 +21,7 @@
 # Imports
 import binascii
 
-from bip_utils import (
+from bip_utils_m1 import (
     AdaByronAddrDecoder, AdaByronAddrTypes, AdaByronIcarusAddr, AdaByronIcarusAddrEncoder, AdaByronLegacyAddr,
     AdaByronLegacyAddrEncoder, Bip32ChainCode, Bip32PathError, Bip32PathParser, ChaCha20Poly1305
 )

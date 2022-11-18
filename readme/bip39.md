@@ -47,7 +47,7 @@ Supported languages:
 **Code example**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         Bip39EntropyBitLen, Bip39EntropyGenerator, Bip39WordsNum, Bip39Languages, Bip39MnemonicGenerator, Bip39MnemonicEncoder
     )
     
@@ -87,7 +87,7 @@ Automatic detection takes more time, so if the mnemonic language is known in adv
 
 **Code example**
 
-    from bip_utils import (
+    from bip_utils_m1 import (
         MnemonicChecksumError, Bip39Languages, Bip39WordsNum, Bip39Mnemonic,
         Bip39MnemonicGenerator, Bip39MnemonicValidator, Bip39MnemonicDecoder
     )
@@ -127,13 +127,13 @@ Automatic detection takes more time, so if the mnemonic language is known in adv
 
 A secure 64-byte seed is generated from a mnemonic and can be protected by a passphrase.\
 This seed can be used to construct a Bip class using the `FromSeed` method (e.g. `Bip44.FromSeed`, see
-[Bip32](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip32.md) or 
-[Bip44](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip44.md) ).\
+[Bip32](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip32.md) or 
+[Bip44](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip44.md) ).\
 Also in this case, the language can be specified or automatically detected.
 
 **Code example**
 
-    from bip_utils import Bip39Languages, Bip39WordsNum, Bip39MnemonicGenerator, Bip39SeedGenerator
+    from bip_utils_m1 import Bip39Languages, Bip39WordsNum, Bip39MnemonicGenerator, Bip39SeedGenerator
 
     # Mnemonic can be generated with Bip39MnemonicGenerator
     mnemonic = Bip39MnemonicGenerator().FromWordsNumber(Bip39WordsNum.WORDS_NUM_24)
@@ -152,9 +152,9 @@ Also in this case, the language can be specified or automatically detected.
 Polkadot introduced a variant for generating seed, which computes the seed directly from the mnemonic entropy instead of the mnemonic string.\
 Reference: [Substrate seed generation](https://wiki.polkadot.network/docs/learn-accounts#seed-generation)\
 For this purpose, the class `SubstrateBip39SeedGenerator` can be used, which has the same usage of `Bip39SeedGenerator`.\
-The seed can be used to construct a `Substrate` class using the `Substrate.FromSeed` method, see the [related paragraph](https://github.com/ebellocchia/bip_utils/tree/master/readme/substrate.md).
+The seed can be used to construct a `Substrate` class using the `Substrate.FromSeed` method, see the [related paragraph](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/substrate.md).
 
-    from bip_utils import Bip39Languages, Bip39WordsNum, Bip39MnemonicGenerator, SubstrateBip39SeedGenerator
+    from bip_utils_m1 import Bip39Languages, Bip39WordsNum, Bip39MnemonicGenerator, SubstrateBip39SeedGenerator
 
     # Mnemonic can be generated with Bip39MnemonicGenerator
     mnemonic = Bip39MnemonicGenerator().FromWordsNumber(Bip39WordsNum.WORDS_NUM_12)

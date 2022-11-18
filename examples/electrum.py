@@ -2,7 +2,7 @@
 
 import binascii
 
-from bip_utils import (
+from bip_utils_m1 import (
     CoinsConf, ElectrumV1, ElectrumV1MnemonicGenerator, ElectrumV1SeedGenerator, ElectrumV1WordsNum,
     ElectrumV2MnemonicGenerator, ElectrumV2MnemonicTypes, ElectrumV2SeedGenerator, ElectrumV2Segwit, ElectrumV2Standard,
     ElectrumV2WordsNum, IPrivateKey, WifEncoder, WifPubKeyModes

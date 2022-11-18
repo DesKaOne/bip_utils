@@ -7,7 +7,7 @@ There 4 type of V2 mnemonics (all supported):
 - Standard 2FA
 - Segwit 2FA
 
-The usage of the Electrum V2 mnemonic library is basically equivalent to the [BIP-0039](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip39.md) one,
+The usage of the Electrum V2 mnemonic library is basically equivalent to the [BIP-0039](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip39.md) one,
 just replace the `Bip39` prefix with `ElectrumV2`.
 
 ### Mnemonic generation
@@ -61,7 +61,7 @@ Therefore, `ValueError` will be raised if the entropy bytes are not suitable for
 **Code example**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         ElectrumV2EntropyBitLen, ElectrumV2EntropyGenerator, ElectrumV2Languages, ElectrumV2MnemonicTypes,
         ElectrumV2WordsNum, ElectrumV2MnemonicEncoder, ElectrumV2MnemonicGenerator
     )
@@ -114,7 +114,7 @@ the mnemonic type is not existent of it's different to the specified one,
 
 **Code example**
     
-    from bip_utils import (
+    from bip_utils_m1 import (
         ElectrumV2Languages, ElectrumV2MnemonicTypes, ElectrumV2WordsNum, ElectrumV2Mnemonic,
         ElectrumV2MnemonicGenerator, ElectrumV2MnemonicValidator, ElectrumV2MnemonicDecoder,
     )
@@ -165,11 +165,11 @@ the mnemonic type is not existent of it's different to the specified one,
 ### Seed generation
 
 The generated seed can be used to construct a `ElectrumV2` classes, see the
-[related paragraph](https://github.com/ebellocchia/bip_utils/tree/master/readme/eletrum.md).
+[related paragraph](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/eletrum.md).
 
 **Code example**
 
-    from bip_utils import (
+    from bip_utils_m1 import (
         ElectrumV2Languages, ElectrumV2MnemonicTypes, ElectrumV2WordsNum, ElectrumV2MnemonicGenerator, ElectrumV2SeedGenerator
     )
     

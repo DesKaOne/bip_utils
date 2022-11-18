@@ -38,7 +38,7 @@ The class can be constructed from a seed, like `Bip32`. The seed can be specifie
 **Code example**
 
     import binascii
-    from bip_utils import SubstrateBip39SeedGenerator, SubstrateCoins, Substrate
+    from bip_utils_m1 import SubstrateBip39SeedGenerator, SubstrateCoins, Substrate
 
     # Generate from mnemonic
     mnemonic = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
@@ -58,7 +58,7 @@ The class can be constructed from a private or a public key.
 **Code example**
 
     import binascii
-    from bip_utils import SubstrateCoins, Substrate, Sr25519PublicKey, Sr25519PrivateKey
+    from bip_utils_m1 import SubstrateCoins, Substrate, Sr25519PublicKey, Sr25519PrivateKey
 
     # Construction from private key bytes
     priv_key_bytes = binascii.unhexlify(b"2ec306fc1c5bc2f0e3a2c7a6ec6014ca4a0823a7d7d42ad5e9d7f376a1c36c0d14a2ddb1ef1df4adba49f3a4d8c0f6205117907265f09a53ccf07a4e8616dfd8")
@@ -79,13 +79,13 @@ The class can be constructed from a private or a public key.
 
 ### Keys derivation
 
-Like [`Bip32`](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip32.md), each time a key is derived a new instance of the Substrate class is returned.\
+Like [`Bip32`](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip32.md), each time a key is derived a new instance of the Substrate class is returned.\
 The usage is similar to `Bip32`/`Bip44` module.
 
 **Code example**
 
     import binascii
-    from bip_utils import SubstrateCoins, Substrate
+    from bip_utils_m1 import SubstrateCoins, Substrate
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc1")
@@ -128,7 +128,7 @@ In case of a public-only object, only public derivation will be supported (only 
 **Code example**
 
     import binascii
-    from bip_utils import SubstrateKeyError, SubstrateCoins, Substrate
+    from bip_utils_m1 import SubstrateKeyError, SubstrateCoins, Substrate
 
     # Construction from public key
     pub_key_bytes = b"66933bd1f37070ef87bd1198af3dacceb095237f803f3d32b173e6b425ed7972"
@@ -176,7 +176,7 @@ Please note that, if a path contains only numbers (e.g. "//123"), it'll be consi
 
 **Code example**
 
-    from bip_utils import SubstratePath, SubstratePathParser
+    from bip_utils_m1 import SubstratePath, SubstratePathParser
 
     # Parse path, SubstratePathError is raised in case of errors
     path = SubstratePathParser.Parse("//hard/soft")

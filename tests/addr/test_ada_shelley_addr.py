@@ -21,7 +21,7 @@
 # Imports
 import binascii
 
-from bip_utils import (
+from bip_utils_m1 import (
     AdaShelleyAddr, AdaShelleyAddrDecoder, AdaShelleyAddrEncoder, AdaShelleyAddrNetworkTags, AdaShelleyRewardAddr,
     AdaShelleyRewardAddrDecoder, AdaShelleyRewardAddrEncoder, AdaShelleyStakingAddr, AdaShelleyStakingAddrDecoder,
     AdaShelleyStakingAddrEncoder

@@ -22,12 +22,12 @@
 import binascii
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     Sr25519PrivateKey, Sr25519PublicKey, Substrate, SubstrateCoins, SubstrateKeyError, SubstratePath, SubstratePathElem,
     SubstratePrivateKey, SubstratePublicKey
 )
-from bip_utils.substrate.conf import SubstrateCoinConf
-from bip_utils.substrate.substrate import SubstrateConst
+from bip_utils_m1.substrate.conf import SubstrateCoinConf
+from bip_utils_m1.substrate.substrate import SubstrateConst
 from tests.ecc.test_ecc import (
     TEST_SR25519_PRIV_KEY, TEST_SR25519_PUB_KEY, TEST_VECT_SR25519_PRIV_KEY_INVALID, TEST_VECT_SR25519_PUB_KEY_INVALID
 )

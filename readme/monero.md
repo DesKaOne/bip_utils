@@ -24,7 +24,7 @@ In case of a 24/25 words phrase, the seed corresponds to the private spend key. 
 **Code example**
 
     import binascii
-    from bip_utils import MoneroCoins, Monero
+    from bip_utils_m1 import MoneroCoins, Monero
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"851466f170f7d1dd88325d9f6b89328166fa23e3af712e74aa27cb16837ac10d")
@@ -45,7 +45,7 @@ The class can be constructed directly from the private spend key.
 **Code example**
 
     import binascii
-    from bip_utils import MoneroCoins, Monero, Ed25519MoneroPrivateKey
+    from bip_utils_m1 import MoneroCoins, Monero, Ed25519MoneroPrivateKey
 
     # Create from private spend key bytes (default: Monero main net)
     key_bytes = binascii.unhexlify(b"2c9623882df4940a734b009e0732ce5a8de7a62c4c1a2a53767a8f6c04874107")
@@ -70,7 +70,7 @@ A watch-only class can be constructed from the private view key and the public s
 **Code example**
 
     import binascii
-    from bip_utils import MoneroKeyError, MoneroCoins, Monero, Ed25519MoneroPrivateKey, Ed25519MoneroPublicKey
+    from bip_utils_m1 import MoneroKeyError, MoneroCoins, Monero, Ed25519MoneroPrivateKey, Ed25519MoneroPublicKey
 
     # Keys
     priv_vkey_bytes = binascii.unhexlify(b"14467d1b9bb8d1fcfb5b7ae08cc9994367e917efd7e08cf94f9882ffa0629e09")
@@ -98,7 +98,7 @@ A watch-only class can be constructed from the private view key and the public s
 **Code example**
 
     import binascii
-    from bip_utils import Monero
+    from bip_utils_m1 import Monero
 
     # Create from seed bytes
     seed_bytes = binascii.unhexlify(b"851466f170f7d1dd88325d9f6b89328166fa23e3af712e74aa27cb16837ac10d")

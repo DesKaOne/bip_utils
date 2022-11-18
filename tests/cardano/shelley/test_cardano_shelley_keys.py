@@ -22,11 +22,11 @@
 import binascii
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     Bip32PrivateKey, Bip32PublicKey, CardanoShelleyPrivateKeys, CardanoShelleyPublicKeys, Cip1852Conf,
     EllipticCurveTypes
 )
-from bip_utils.bip.bip32.bip32_const import Bip32Const
+from bip_utils_m1.bip.bip32.bip32_const import Bip32Const
 from tests.bip.bip32.test_bip32_keys import TEST_BIP32_KEY_DATA
 
 

@@ -5,7 +5,7 @@ The SLIP-0032 library allows to serialize/deserialize keys as defined by [SLIP-0
 **Code example**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         Slip32PublicKeySerializer, Slip32PrivateKeySerializer, Slip32KeyDeserializer,
         Secp256k1PublicKey, Secp256k1PrivateKey
     )

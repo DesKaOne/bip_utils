@@ -9,7 +9,7 @@ It replicates the functionalities of:
 import binascii
 from enum import Enum, auto, unique
 
-from bip_utils import (
+from bip_utils_m1 import (
     AlgorandMnemonicGenerator, Bip32KholawEd25519, Bip32Slip10Ed25519, Bip32Slip10Secp256k1, Bip39SeedGenerator,
     Ed25519PrivateKey
 )

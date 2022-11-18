@@ -22,7 +22,7 @@
 import binascii
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     Bip39EntropyBitLen, Bip39EntropyGenerator, Bip39Languages, Bip39MnemonicDecoder, Bip39MnemonicGenerator,
     Bip39MnemonicValidator, Bip39SeedGenerator, Bip39WordsNum, MnemonicChecksumError
 )

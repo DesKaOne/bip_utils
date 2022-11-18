@@ -1,6 +1,6 @@
 """Example of keys derivation using BIP32 (ed25519 curve based on Khovratovich/Law paper)."""
 
-from bip_utils import AlgoAddrEncoder, Bip32KholawEd25519, Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum
+from bip_utils_m1 import AlgoAddrEncoder, Bip32KholawEd25519, Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum
 
 
 # Generate random mnemonic

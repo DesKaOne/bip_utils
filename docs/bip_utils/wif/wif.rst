@@ -1,7 +1,7 @@
 wif
 ===
 
-.. automodule:: bip_utils.wif.wif
+.. automodule:: bip_utils_m1.wif.wif
    :members:
    :undoc-members:
    :show-inheritance:

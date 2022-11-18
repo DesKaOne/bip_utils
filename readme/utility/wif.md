@@ -6,7 +6,7 @@ The WIF library allows encoding/decoding secp256k1 private keys in WIF format, b
 **Code example**
 
     import binascii
-    from bip_utils import Bip44Conf, CoinsConf, Secp256k1PrivateKey, WifPubKeyModes, WifDecoder, WifEncoder
+    from bip_utils_m1 import Bip44Conf, CoinsConf, Secp256k1PrivateKey, WifPubKeyModes, WifDecoder, WifEncoder
 
     # Private key bytes or a private key object can be used
     priv_key = binascii.unhexlify(b'1837c1be8e2995ec11cda2b066151be2cfb48adf9e47b151d46adab3a21cdf67')

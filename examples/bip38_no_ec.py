@@ -2,7 +2,7 @@
 
 import binascii
 
-from bip_utils import Bip38Decrypter, Bip38Encrypter, WifDecoder, WifEncoder
+from bip_utils_m1 import Bip38Decrypter, Bip38Encrypter, WifDecoder, WifEncoder
 
 
 # BIP38 passphrase

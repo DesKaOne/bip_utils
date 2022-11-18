@@ -6,7 +6,7 @@ The result is that the first address is the same of Metamask, while the next one
 This example shows keys generation like Ledger Live.
 """
 
-from bip_utils import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum, Bip44, Bip44Changes, Bip44Coins
+from bip_utils_m1 import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum, Bip44, Bip44Changes, Bip44Coins
 
 
 ADDR_NUM: int = 5

@@ -22,7 +22,7 @@
 import binascii
 import unittest
 
-from bip_utils import SubstrateBip39SeedGenerator
+from bip_utils_m1 import SubstrateBip39SeedGenerator
 
 
 # Tests for substrate variant

@@ -1,6 +1,6 @@
 """Example of wallet creation using Algorand (same addresses of official wallet)."""
 
-from bip_utils import AlgorandMnemonicGenerator, AlgorandSeedGenerator, AlgorandWordsNum, Bip44, Bip44Coins
+from bip_utils_m1 import AlgorandMnemonicGenerator, AlgorandSeedGenerator, AlgorandWordsNum, Bip44, Bip44Coins
 
 
 # Generate random mnemonic

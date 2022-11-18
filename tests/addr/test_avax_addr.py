@@ -19,7 +19,7 @@
 # THE SOFTWARE.
 
 # Imports
-from bip_utils import (
+from bip_utils_m1 import (
     AvaxPChainAddr, AvaxPChainAddrDecoder, AvaxPChainAddrEncoder, AvaxXChainAddr, AvaxXChainAddrDecoder,
     AvaxXChainAddrEncoder
 )

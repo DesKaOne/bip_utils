@@ -24,8 +24,8 @@ import os
 import random
 import unittest
 
-from bip_utils import Bip32ChainCode, Bip32Depth, Bip32FingerPrint, Bip32KeyData, Bip32KeyIndex
-from bip_utils.bip.bip32.bip32_key_data import Bip32KeyDataConst
+from bip_utils_m1 import Bip32ChainCode, Bip32Depth, Bip32FingerPrint, Bip32KeyData, Bip32KeyIndex
+from bip_utils_m1.bip.bip32.bip32_key_data import Bip32KeyDataConst
 
 
 #

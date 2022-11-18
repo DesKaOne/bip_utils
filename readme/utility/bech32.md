@@ -11,7 +11,7 @@ The bech32 library allows encoding/decoding in:
 **Code example**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         Bech32Decoder, Bech32Encoder, BchBech32Encoder, BchBech32Decoder, SegwitBech32Decoder, SegwitBech32Encoder
     )
 

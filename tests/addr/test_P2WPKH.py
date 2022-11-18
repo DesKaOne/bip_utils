@@ -19,7 +19,7 @@
 # THE SOFTWARE.
 
 # Imports
-from bip_utils import CoinsConf, P2WPKHAddr, P2WPKHAddrDecoder, P2WPKHAddrEncoder
+from bip_utils_m1 import CoinsConf, P2WPKHAddr, P2WPKHAddrDecoder, P2WPKHAddrEncoder
 from tests.addr.test_addr_base import AddrBaseTests
 from tests.addr.test_addr_const import TEST_SECP256K1_ADDR_INVALID_KEY_TYPES
 from tests.ecc.test_ecc import TEST_VECT_SECP256K1_PUB_KEY_INVALID, Secp256k1PublicKey

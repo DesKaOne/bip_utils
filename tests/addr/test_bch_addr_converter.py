@@ -21,7 +21,7 @@
 # Imports
 import unittest
 
-from bip_utils import BchAddrConverter
+from bip_utils_m1 import BchAddrConverter
 
 
 # Some random addresses

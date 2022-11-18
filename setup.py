@@ -40,7 +40,7 @@ def load_requirements(req_file):
 
 # Command base class
 class CommandBase(object):
-    conf_file = "bip_utils/ecc/conf.py"
+    conf_file = "bip_utils_m1/ecc/conf.py"
     conf_str = "USE_COINCURVE: bool = "
 
     user_options = [
@@ -99,11 +99,11 @@ class DevelopCommand(CommandBase, develop):
 
 
 # Load version
-version = load_version("bip_utils", "_version.py")
+version = load_version("bip_utils_m1", "_version.py")
 
 # Setup configuration
 setuptools.setup(
-    name="bip_utils",
+    name="bip_utils_m1",
     version=version,
     author="Emanuele Bellocchia",
     author_email="ebellocchia@gmail.com",
@@ -112,8 +112,8 @@ setuptools.setup(
     description="Generation of mnemonics, seeds, private/public keys and addresses for different types of cryptocurrencies",
     long_description=load_long_description("README.md"),
     long_description_content_type="text/markdown",
-    url="https://github.com/ebellocchia/bip_utils",
-    download_url="https://github.com/ebellocchia/bip_utils/archive/v%s.tar.gz" % version,
+    url="https://github.com/ebellocchia/bip_utils_m1",
+    download_url="https://github.com/ebellocchia/bip_utils_m1/archive/v%s.tar.gz" % version,
     license="MIT",
     test_suite="tests",
     cmdclass={
@@ -129,7 +129,7 @@ setuptools.setup(
     },
     packages=setuptools.find_packages(exclude=["*tests*"]),
     package_data={
-        "bip_utils": [
+        "bip_utils_m1": [
             # BIP39
             "bip/bip39/wordlist/english.txt",
             "bip/bip39/wordlist/italian.txt",

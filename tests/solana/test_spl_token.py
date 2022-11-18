@@ -21,8 +21,8 @@
 # Imports
 import unittest
 
-from bip_utils import SplToken
-from bip_utils.solana.spl_token import SplTokenConst
+from bip_utils_m1 import SplToken
+from bip_utils_m1.solana.spl_token import SplTokenConst
 
 
 # Test vector

@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.abspath(".."))
 
 # -- Project information -----------------------------------------------------
 
-project = "bip_utils"
+project = "bip_utils_m1"
 copyright = "2022 Emanuele Bellocchia"
 author = "Emanuele Bellocchia"
 

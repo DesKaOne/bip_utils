@@ -1,11 +1,11 @@
 # BIP Utility Library
 [![PyPI version](https://badge.fury.io/py/bip-utils.svg)](https://badge.fury.io/py/bip-utils)
-[![Build Status](https://travis-ci.com/ebellocchia/bip_utils.svg?branch=master)](https://travis-ci.com/ebellocchia/bip_utils)
+[![Build Status](https://travis-ci.com/ebellocchia/bip_utils_m1.svg?branch=master)](https://travis-ci.com/ebellocchia/bip_utils_m1)
 [![Documentation Status](https://readthedocs.org/projects/bip-utils/badge/?version=latest)](https://bip-utils.readthedocs.io/en/latest/?badge=latest)
-[![codecov](https://codecov.io/gh/ebellocchia/bip_utils/branch/master/graph/badge.svg)](https://codecov.io/gh/ebellocchia/bip_utils)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9a0c9c6a3d6444fab91f58fe8ec9e35c)](https://www.codacy.com/gh/ebellocchia/bip_utils/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ebellocchia/bip_utils&amp;utm_campaign=Badge_Grade)
-[![CodeFactor](https://www.codefactor.io/repository/github/ebellocchia/bip_utils/badge)](https://www.codefactor.io/repository/github/ebellocchia/bip_utils)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/ebellocchia/bip_utils/master/LICENSE)
+[![codecov](https://codecov.io/gh/ebellocchia/bip_utils_m1/branch/master/graph/badge.svg)](https://codecov.io/gh/ebellocchia/bip_utils_m1)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/9a0c9c6a3d6444fab91f58fe8ec9e35c)](https://www.codacy.com/gh/ebellocchia/bip_utils_m1/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ebellocchia/bip_utils_m1&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/ebellocchia/bip_utils_m1/badge)](https://www.codefactor.io/repository/github/ebellocchia/bip_utils_m1)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/ebellocchia/bip_utils_m1/master/LICENSE)
 
 ## Introduction
 
@@ -144,7 +144,7 @@ To install the package:
 
     - Using *pip*, from PyPI:
 
-            pip install bip_utils
+            pip install bip_utils_m1
 
 - Alternative installation (*ecdsa* will be used for secp256k1)
     - Using *setuptools*:
@@ -157,11 +157,11 @@ To install the package:
 
     - Using *pip*, from PyPI:
 
-            pip install bip_utils --install-option="--coincurve=0"
+            pip install bip_utils_m1 --install-option="--coincurve=0"
 
 **NOTES:**
 - if you are using an Apple M1, please make sure to update *coincurve* to version 17.0.0
-- in case of problems when building the *ed25519_blake2b* library, you can try one of the prebuilt wheels [here](https://github.com/ebellocchia/bip_utils/tree/master/libs_wheels)
+- in case of problems when building the *ed25519_blake2b* library, you can try one of the prebuilt wheels [here](https://github.com/ebellocchia/bip_utils_m1/tree/master/libs_wheels)
 
 To run tests:
 
@@ -182,18 +182,18 @@ For quick test:
 
 ## Modules description
 
-- [BIP-0039](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip39.md)
-- [Algorand mnemonic](https://github.com/ebellocchia/bip_utils/tree/master/readme/algorand_mnemonic.md)
-- [Electrum mnemonic](https://github.com/ebellocchia/bip_utils/tree/master/readme/electrum_mnemonic.md)
-- [Monero mnemonic](https://github.com/ebellocchia/bip_utils/tree/master/readme/monero_mnemonic.md)
-- [BIP-0038](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip38.md)
-- [BIP-0032](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip32.md)
-- [BIP-0044](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip44.md)
-- [Cardano](https://github.com/ebellocchia/bip_utils/tree/master/readme/cardano.md)
-- [Electrum](https://github.com/ebellocchia/bip_utils/tree/master/readme/electrum.md)
-- [Monero](https://github.com/ebellocchia/bip_utils/tree/master/readme/monero.md)
-- [Substrate](https://github.com/ebellocchia/bip_utils/tree/master/readme/substrate.md)
-- [Utility libraries](https://github.com/ebellocchia/bip_utils/tree/master/readme/utility_libs.md)
+- [BIP-0039](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip39.md)
+- [Algorand mnemonic](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/algorand_mnemonic.md)
+- [Electrum mnemonic](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/electrum_mnemonic.md)
+- [Monero mnemonic](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/monero_mnemonic.md)
+- [BIP-0038](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip38.md)
+- [BIP-0032](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip32.md)
+- [BIP-0044](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip44.md)
+- [Cardano](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/cardano.md)
+- [Electrum](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/electrum.md)
+- [Monero](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/monero.md)
+- [Substrate](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/substrate.md)
+- [Utility libraries](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/utility_libs.md)
 
 ## Documentation
 
@@ -201,7 +201,7 @@ The library documentation is available at [bip-utils.readthedocs.io](https://bip
 
 ## Code examples
 
-For some complete code examples (from mnemonic to keys generation), refer to the [examples](https://github.com/ebellocchia/bip_utils/tree/master/examples) folder.
+For some complete code examples (from mnemonic to keys generation), refer to the [examples](https://github.com/ebellocchia/bip_utils_m1/tree/master/examples) folder.
 
 # Buy me a coffee
 

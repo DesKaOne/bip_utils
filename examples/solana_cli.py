@@ -7,7 +7,7 @@ Secondly, the master private key is just the first 32-byte of the seed generated
 the HMAC-SHA512 like BIP32.
 """
 
-from bip_utils import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum, Bip44, Bip44Coins
+from bip_utils_m1 import Bip39MnemonicGenerator, Bip39SeedGenerator, Bip39WordsNum, Bip44, Bip44Coins
 
 
 # Generate random mnemonic

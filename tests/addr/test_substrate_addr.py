@@ -19,7 +19,7 @@
 # THE SOFTWARE.
 
 # Imports
-from bip_utils import (
+from bip_utils_m1 import (
     SubstrateEd25519Addr, SubstrateEd25519AddrDecoder, SubstrateEd25519AddrEncoder, SubstrateSr25519Addr,
     SubstrateSr25519AddrDecoder, SubstrateSr25519AddrEncoder
 )

@@ -22,9 +22,9 @@
 # Imports
 from typing import Type
 
-from bip_utils import Bip44Changes
-from bip_utils.bip.bip44_base import Bip44Base
-from bip_utils.bip.conf.common import BipCoins
+from bip_utils_m1 import Bip44Changes
+from bip_utils_m1.bip.bip44_base import Bip44Base
+from bip_utils_m1.bip.conf.common import BipCoins
 from tests.benchmark_tests_base import BenchmarkTestsBase
 
 

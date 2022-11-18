@@ -1,7 +1,7 @@
 literal
 =======
 
-.. automodule:: bip_utils.utils.typing.literal
+.. automodule:: bip_utils_m1.utils.typing.literal
    :members:
    :undoc-members:
    :show-inheritance:

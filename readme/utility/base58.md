@@ -16,7 +16,7 @@ Alphabet enumeratives:
 **Code example**
 
     import binascii
-    from bip_utils import Base58Alphabets, Base58Decoder, Base58Encoder, Base58XmrDecoder, Base58XmrEncoder
+    from bip_utils_m1 import Base58Alphabets, Base58Decoder, Base58Encoder, Base58XmrDecoder, Base58XmrEncoder
 
     data_bytes = binascii.unhexlify(b"636363")
 

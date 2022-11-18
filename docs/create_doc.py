@@ -11,7 +11,7 @@ from typing import List
 #
 # Constants
 #
-PROJECT: str = "bip_utils"
+PROJECT: str = "bip_utils_m1"
 
 DOC_FOLDER: str = os.path.join(".", PROJECT)
 SRC_FOLDER: str = os.path.join("..", PROJECT)

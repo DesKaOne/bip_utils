@@ -22,8 +22,8 @@
 import binascii
 import unittest
 
-from bip_utils import SS58ChecksumError, SS58Decoder, SS58Encoder
-from bip_utils.ss58.ss58 import SS58Const
+from bip_utils_m1 import SS58ChecksumError, SS58Decoder, SS58Encoder
+from bip_utils_m1.ss58.ss58 import SS58Const
 
 
 # Test vector

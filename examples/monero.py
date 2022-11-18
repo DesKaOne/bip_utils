@@ -2,7 +2,7 @@
 
 import binascii
 
-from bip_utils import Monero, MoneroMnemonicGenerator, MoneroSeedGenerator, MoneroWordsNum
+from bip_utils_m1 import Monero, MoneroMnemonicGenerator, MoneroSeedGenerator, MoneroWordsNum
 
 
 # Generate random mnemonic

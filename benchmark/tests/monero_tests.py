@@ -20,7 +20,7 @@
 
 
 # Imports
-from bip_utils import Monero
+from bip_utils_m1 import Monero
 from tests.benchmark_tests_base import BenchmarkTestsBase
 
 

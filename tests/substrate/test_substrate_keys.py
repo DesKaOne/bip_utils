@@ -22,10 +22,10 @@
 import binascii
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     DataBytes, Sr25519PrivateKey, Sr25519PublicKey, SubstrateKeyError, SubstratePrivateKey, SubstratePublicKey
 )
-from bip_utils.substrate.conf.substrate_conf import SubstrateConf
+from bip_utils_m1.substrate.conf.substrate_conf import SubstrateConf
 from tests.ecc.test_ecc import (
     TEST_ED25519_BLAKE2B_PRIV_KEY, TEST_ED25519_BLAKE2B_PUB_KEY, TEST_ED25519_MONERO_PRIV_KEY,
     TEST_ED25519_MONERO_PUB_KEY, TEST_ED25519_PRIV_KEY, TEST_ED25519_PUB_KEY, TEST_NIST256P1_PRIV_KEY,

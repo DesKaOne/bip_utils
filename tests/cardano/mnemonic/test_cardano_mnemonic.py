@@ -22,7 +22,7 @@
 import binascii
 import unittest
 
-from bip_utils import CardanoByronLegacySeedGenerator, CardanoIcarusSeedGenerator
+from bip_utils_m1 import CardanoByronLegacySeedGenerator, CardanoIcarusSeedGenerator
 
 
 # Test vector

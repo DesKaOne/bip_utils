@@ -29,8 +29,8 @@ Supported coins enumerative for BIP-0044:
 |Bitcoin Cash|`Bip44Coins.BITCOIN_CASH`|`Bip44Coins.BITCOIN_CASH_TESTNET`|
 |[Bitcoin Cash SLP](https://reference.cash/protocol/slp)|`Bip44Coins.BITCOIN_CASH_SLP`|`Bip44Coins.BITCOIN_CASH_SLP_TESTNET`|
 |BitcoinSV|`Bip44Coins.BITCOIN_SV`|`Bip44Coins.BITCOIN_SV_TESTNET`|
-|Cardano Byron (Icarus)|`Bip44Coins.CARDANO_BYRON_ICARUS`, see [Cardano](https://github.com/ebellocchia/bip_utils/tree/master/readme/cardano.md)|-|
-|Cardano Byron (Ledger)|`Bip44Coins.CARDANO_BYRON_LEDGER`, see [Cardano](https://github.com/ebellocchia/bip_utils/tree/master/readme/cardano.md)|-|
+|Cardano Byron (Icarus)|`Bip44Coins.CARDANO_BYRON_ICARUS`, see [Cardano](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/cardano.md)|-|
+|Cardano Byron (Ledger)|`Bip44Coins.CARDANO_BYRON_LEDGER`, see [Cardano](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/cardano.md)|-|
 |Celo|`Bip44Coins.CELO`|-|
 |Certik|`Bip44Coins.CERTIK`|-|
 |Chihuahua|`Bip44Coins.CHIHUAHUA`|-|
@@ -133,7 +133,7 @@ A Bip class can be constructed from a seed. The seed can be specified manually o
 **Code example**
 
     import binascii
-    from bip_utils import Bip39SeedGenerator, Bip44Coins, Bip44
+    from bip_utils_m1 import Bip39SeedGenerator, Bip44Coins, Bip44
 
     # Generate from mnemonic
     mnemonic = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
@@ -150,7 +150,7 @@ The returned Bip object will be at the same depth of the specified key. If the d
 
 **Code example**
 
-    from bip_utils import Bip44Coins, Bip44
+    from bip_utils_m1 import Bip44Coins, Bip44
 
     # Private extended key
     key_str = "xprv9s21ZrQH143K3QTDL4LXw2F7HEK3wJUD2nW2nRk4stbPy6cq3jPPqjiChkVvvNKmPGJxWUtg6LnF5kejMRNNU3TGtRBeJgk33yuGBxrMPHi"
@@ -160,13 +160,13 @@ The returned Bip object will be at the same depth of the specified key. If the d
 ### Construction from private key
 
 A Bip class can be constructed directly from a private key, with the possibility to specify the derivation data.\
-Like [`Bip32`](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip32.md), if only the key bytes is specified, it will be considered a master key since there is no way to recover the key derivation data from the key bytes.\
+Like [`Bip32`](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip32.md), if only the key bytes is specified, it will be considered a master key since there is no way to recover the key derivation data from the key bytes.\
 Therefore, the returned object will have a depth and index equal to zero, a zero chain code and parent fingerprint.
 
 **Code example**
 
     import binascii
-    from bip_utils import Bip32KeyData, Bip44Coins, Bip44, Secp256k1PrivateKey
+    from bip_utils_m1 import Bip32KeyData, Bip44Coins, Bip44, Secp256k1PrivateKey
     
     # Construct from private key bytes
     priv_key_bytes = binascii.unhexlify(b"e8f32e723decf4051aefac8e2c93c9c5b214313817cdb01a1494b917c8436b35")
@@ -196,7 +196,7 @@ Therefore, the returned object will have a depth and index equal to zero, a zero
 **Code example**
 
     import binascii
-    from bip_utils import Bip32KeyData, Bip44Coins, Bip44, Secp256k1PublicKey
+    from bip_utils_m1 import Bip32KeyData, Bip44Coins, Bip44, Secp256k1PublicKey
     
     # Construct from public key bytes
     pub_key_bytes = binascii.unhexlify(b"02e8445082a72f29b75ca48748a914df60622a609cacfce8ed0e35804560741d29")
@@ -219,7 +219,7 @@ Therefore, the returned object will have a depth and index equal to zero, a zero
 
 ### Keys derivation
 
-Like [`Bip32`](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip32.md), each time a key is derived a new instance of the Bip class is returned.\
+Like [`Bip32`](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip32.md), each time a key is derived a new instance of the Bip class is returned.\
 The keys must be derived with the levels specified by BIP-0044:
 
     m / purpose' / coin_type' / account' / change / address_index
@@ -234,7 +234,7 @@ The private and public extended keys can be printed at any level.
 **Code example**
 
     import binascii
-    from bip_utils import Bip44Changes, Bip44Coins, Bip44Levels, Bip44
+    from bip_utils_m1 import Bip44Changes, Bip44Coins, Bip44Levels, Bip44
     
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -297,7 +297,7 @@ However, this doesn't apply all coins. For example, Solana uses the following pa
 This can be derived manually, for example:
 
     import binascii
-    from bip_utils import Bip44Coins, Bip44
+    from bip_utils_m1 import Bip44Coins, Bip44
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -311,7 +311,7 @@ This can be derived manually, for example:
 However, in order to avoid remembering the default path for each coin, the `DeriveDefaultPath` method can be used to automatically derive the default path:
 
     import binascii
-    from bip_utils import Bip44Coins, Bip44
+    from bip_utils_m1 import Bip44Coins, Bip44
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -333,7 +333,7 @@ For this, I used the same implementation of TrustWallet, i.e.:
 - The derivation scheme is based on ed25519 SLIP-0010
 - The default derivation path is: m/44'/354'/0'/0'/0'
 
-If you want to get the same keys and addresses of the Polkadot-JS wallet, use the `Substrate` module (see the [related paragraph](https://github.com/ebellocchia/bip_utils/tree/master/readme/substrate.md)).
+If you want to get the same keys and addresses of the Polkadot-JS wallet, use the `Substrate` module (see the [related paragraph](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/substrate.md)).
 
 ### Monero addresses generation
 
@@ -354,7 +354,7 @@ Whatever implementation or path you choose, the Monero private spend key is comp
 **Code example**
 
     import binascii
-    from bip_utils import Bip44Coins, Bip44, Monero
+    from bip_utils_m1 import Bip44Coins, Bip44, Monero
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -384,7 +384,7 @@ If you prefer not to perform the kekkak256 of the key bytes, you can just use th
 **Code example**
 
     import binascii
-    from bip_utils import Bip44Coins, Bip44, Monero
+    from bip_utils_m1 import Bip44Coins, Bip44, Monero
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -397,4 +397,4 @@ If you prefer not to perform the kekkak256 of the key bytes, you can just use th
     # Same as before...
 
 Please note that, if the seed is generated from a Monero mnemonic phrase, you'll get the same keys and addresses of the official Monero wallets.\
-For the usage of the `Monero` module alone, see the [related paragraph](https://github.com/ebellocchia/bip_utils/tree/master/readme/monero.md).
+For the usage of the `Monero` module alone, see the [related paragraph](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/monero.md).

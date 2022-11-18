@@ -7,7 +7,7 @@ It supports both private keys encryption/decryption with and without EC multipli
 **Code example (without EC multiplication)**
 
     import binascii
-    from bip_utils import Bip38PubKeyModes, Bip38Decrypter, Bip38Encrypter, Secp256k1PrivateKey
+    from bip_utils_m1 import Bip38PubKeyModes, Bip38Decrypter, Bip38Encrypter, Secp256k1PrivateKey
     
     passphrase = "DummyPassphrase"
     
@@ -35,7 +35,7 @@ It supports both private keys encryption/decryption with and without EC multipli
 **Code example (with EC multiplication)**
 
     import binascii
-    from bip_utils import Bip38PubKeyModes, Bip38Decrypter, Bip38Encrypter, Bip38EcKeysGenerator
+    from bip_utils_m1 import Bip38PubKeyModes, Bip38Decrypter, Bip38Encrypter, Bip38EcKeysGenerator
     
     passphrase = "DummyPassphrase"
     

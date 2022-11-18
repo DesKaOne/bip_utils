@@ -3,7 +3,7 @@
 If you use the official Monero wallet, you'll probably notice that Monero generates mnemonic in its own way, which is different from BIP-0039.\
 In fact, it uses different words lists (with 1626 words instead of 2048) and a different algorithm for encoding/decoding the mnemonic string.
 
-The functionalities of this library are the same of the [BIP-0039](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip39.md) one but with Monero-style mnemonics:
+The functionalities of this library are the same of the [BIP-0039](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip39.md) one but with Monero-style mnemonics:
 - Generate mnemonics from words number or entropy bytes
 - Validate a mnemonic
 - Get back the entropy bytes from a mnemonic
@@ -11,13 +11,13 @@ The functionalities of this library are the same of the [BIP-0039](https://githu
 
 ### Library usage
 
-The usage of the Monero mnemonic library is basically equivalent to the [BIP-0039](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip39.md) one,
+The usage of the Monero mnemonic library is basically equivalent to the [BIP-0039](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip39.md) one,
 just replace the `Bip39` prefix with `Monero`.\
 The only differences are:
 - It's possible to generate mnemonics both with and without checksum
 - It's not possible to use a passphrase for seed generation like BIP-0039
 
-The generated seed can be then used to construct a `Monero` class using the `Monero.FromSeed` method, see the [related paragraph](https://github.com/ebellocchia/bip_utils/tree/master/readme/monero.md).
+The generated seed can be then used to construct a `Monero` class using the `Monero.FromSeed` method, see the [related paragraph](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/monero.md).
 
 Supported words number:
 
@@ -56,7 +56,7 @@ Supported languages:
 **Code example (mnemonic generation)**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         MoneroEntropyBitLen, MoneroEntropyGenerator, MoneroLanguages, MoneroWordsNum,
         MoneroMnemonicEncoder, MoneroMnemonicGenerator
     )
@@ -94,7 +94,7 @@ Supported languages:
 
 **Code example (mnemonic validation)**
 
-    from bip_utils import (
+    from bip_utils_m1 import (
         MnemonicChecksumError, MoneroLanguages, MoneroWordsNum, MoneroMnemonic,
         MoneroMnemonicGenerator, MoneroMnemonicValidator, MoneroMnemonicDecoder
     )
@@ -128,7 +128,7 @@ Supported languages:
 
 **Code example (mnemonic seed generation)**
 
-    from bip_utils import MoneroLanguages, MoneroWordsNum, MoneroMnemonicGenerator, MoneroSeedGenerator
+    from bip_utils_m1 import MoneroLanguages, MoneroWordsNum, MoneroMnemonicGenerator, MoneroSeedGenerator
     
     # Mnemonic can be generated with MoneroMnemonicGenerator
     mnemonic = MoneroMnemonicGenerator().FromWordsNumber(MoneroWordsNum.WORDS_NUM_25)

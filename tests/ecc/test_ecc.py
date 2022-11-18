@@ -29,7 +29,7 @@ from ecdsa import ellipticcurve
 from ecdsa.ecdsa import generator_256, generator_secp256k1
 from nacl import signing
 
-from bip_utils import (
+from bip_utils_m1 import (
     DataBytes, Ed25519, Ed25519Blake2b, Ed25519Blake2bPoint, Ed25519Blake2bPrivateKey, Ed25519Blake2bPublicKey,
     Ed25519Kholaw, Ed25519KholawPoint, Ed25519KholawPrivateKey, Ed25519KholawPublicKey, Ed25519Monero,
     Ed25519MoneroPoint, Ed25519MoneroPrivateKey, Ed25519MoneroPublicKey, Ed25519Point, Ed25519PrivateKey,
@@ -37,8 +37,8 @@ from bip_utils import (
     Nist256p1PublicKey, Secp256k1, Secp256k1Point, Secp256k1PrivateKey, Secp256k1PublicKey, Sr25519, Sr25519Point,
     Sr25519PrivateKey, Sr25519PublicKey
 )
-from bip_utils.ecc.conf import EccConf
-from bip_utils.utils.misc import IntegerUtils
+from bip_utils_m1.ecc.conf import EccConf
+from bip_utils_m1.utils.misc import IntegerUtils
 
 
 # ed25519 order and generator

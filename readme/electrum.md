@@ -18,7 +18,7 @@ An `ElectrumV1` object can be constructed from:
 **Code example**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         CoinsConf,
         ElectrumV1WordsNum, ElectrumV1MnemonicGenerator, ElectrumV1SeedGenerator, ElectrumV1,
         IPrivateKey, WifPubKeyModes, WifEncoder
@@ -73,7 +73,7 @@ The usage of these two classes are exactly the same, since they inherit from the
 
 **Code example**
 
-    from bip_utils import (
+    from bip_utils_m1 import (
         Bip32Slip10Secp256k1,
         CoinsConf,
         ElectrumV2WordsNum, ElectrumV2MnemonicTypes, ElectrumV2MnemonicGenerator, ElectrumV2SeedGenerator,

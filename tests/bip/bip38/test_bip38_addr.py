@@ -22,8 +22,8 @@
 import binascii
 import unittest
 
-from bip_utils import Bip38PubKeyModes, Secp256k1PublicKey
-from bip_utils.bip.bip38.bip38_addr import Bip38Addr
+from bip_utils_m1 import Bip38PubKeyModes, Secp256k1PublicKey
+from bip_utils_m1.bip.bip38.bip38_addr import Bip38Addr
 
 
 # Public keys for testing

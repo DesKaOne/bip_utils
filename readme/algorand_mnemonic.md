@@ -3,7 +3,7 @@
 The official Algorand wallet uses a 25-word mnemonic, which is generated with a different algorithm with respect to BIP-0039, 
 even if the words list is the same.
 
-The functionalities of this library are the same of the [BIP-0039](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip39.md) one but with Algorand-style mnemonics:
+The functionalities of this library are the same of the [BIP-0039](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip39.md) one but with Algorand-style mnemonics:
 - Generate mnemonics from words number or entropy bytes
 - Validate a mnemonic
 - Get back the entropy bytes from a mnemonic
@@ -11,7 +11,7 @@ The functionalities of this library are the same of the [BIP-0039](https://githu
 
 ### Library usage
 
-The usage of the Algorand mnemonic library is basically equivalent to the [BIP-0039](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip39.md) one,
+The usage of the Algorand mnemonic library is basically equivalent to the [BIP-0039](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip39.md) one,
 just replace the `Bip39` prefix with `Algorand`.
 
 Supported words number:
@@ -35,7 +35,7 @@ Supported languages:
 **Code example (mnemonic generation)**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         AlgorandEntropyBitLen, AlgorandEntropyGenerator, AlgorandLanguages, AlgorandWordsNum,
         AlgorandMnemonicEncoder, AlgorandMnemonicGenerator
     )
@@ -69,7 +69,7 @@ Supported languages:
 
 **Code example (mnemonic validation)**
 
-    from bip_utils import (
+    from bip_utils_m1 import (
         MnemonicChecksumError, AlgorandLanguages, AlgorandWordsNum, AlgorandMnemonic,
         AlgorandMnemonicGenerator, AlgorandMnemonicValidator, AlgorandMnemonicDecoder,
     )
@@ -103,7 +103,7 @@ Supported languages:
 
 **Code example (mnemonic seed generation)**
 
-    from bip_utils import AlgorandLanguages, AlgorandWordsNum, AlgorandMnemonicGenerator, AlgorandSeedGenerator
+    from bip_utils_m1 import AlgorandLanguages, AlgorandWordsNum, AlgorandMnemonicGenerator, AlgorandSeedGenerator
     
     # Mnemonic can be generated with AlgorandMnemonicGenerator
     mnemonic = AlgorandMnemonicGenerator().FromWordsNumber(AlgorandWordsNum.WORDS_NUM_25)

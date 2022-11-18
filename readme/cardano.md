@@ -7,7 +7,7 @@ Both Byron and Shelley addresses are supported.
 
 The library can generate Cardano Byron keys and addresses based on the legacy, Icarus and Ledger algorithms.
 
-The Icarus and Ledger algorithms are based on BIP-0044, so the [BIP-0044 module](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip44.md)
+The Icarus and Ledger algorithms are based on BIP-0044, so the [BIP-0044 module](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip44.md)
 shall be used. The derivation path is: `m/44'/1815'/0'/0/0`.\
 The generated addresses are in the `Ae2...` format.
 
@@ -31,7 +31,7 @@ The returned public/private keys are `Bip32PublicKey`/`Bip32PrivateKey` objects.
 **Code example**
 
     import binascii
-    from bip_utils import CardanoByronLegacy, CardanoByronLegacyBip32, CardanoByronLegacySeedGenerator
+    from bip_utils_m1 import CardanoByronLegacy, CardanoByronLegacyBip32, CardanoByronLegacySeedGenerator
     
     # Generate seed from mnemonic using CardanoByronLegacySeedGenerator
     mnemonic = "ignore year visit govern grape ocean much ecology path inside shoe twenty"
@@ -71,7 +71,7 @@ The BIP44 coin to be used in this case is `Bip44Coins.CARDANO_BYRON_ICARUS`.
 
 **Code example**
 
-    from bip_utils import Bip44Changes, Bip44Coins, Bip44, CardanoIcarusSeedGenerator
+    from bip_utils_m1 import Bip44Changes, Bip44Coins, Bip44, CardanoIcarusSeedGenerator
     
     # Generate seed from mnemonic using CardanoIcarusSeedGenerator
     mnemonic = "cost dash dress stove morning robust group affair stomach vacant route volume yellow salute laugh"
@@ -102,7 +102,7 @@ The BIP44 coin to be used in this case is `Bip44Coins.CARDANO_BYRON_LEDGER`.
 
 **Code example**
     
-    from bip_utils import Bip39SeedGenerator, Bip44Changes, Bip44Coins, Bip44
+    from bip_utils_m1 import Bip39SeedGenerator, Bip44Changes, Bip44Coins, Bip44
     
     # Generate seed from mnemonic using Bip39SeedGenerator
     mnemonic = "cost dash dress stove morning robust group affair stomach vacant route volume yellow salute laugh"
@@ -134,7 +134,7 @@ The generated addresses are in the `addr1...` format.
 
 The `Cip1852` class allows deriving keys as defined by [CIP-1852](https://cips.cardano.org/cips/cip1852).\
 It inherits from the `Bip44Base` class, so its usage is exactly the same of the BIP-0044 classes
-(see the [related paragraph](https://github.com/ebellocchia/bip_utils/tree/master/readme/bip44.md)).
+(see the [related paragraph](https://github.com/ebellocchia/bip_utils_m1/tree/master/readme/bip44.md)).
 
 Supported coins enumerative for CIP-1852:
 
@@ -153,7 +153,7 @@ To derive addresses from a `Cip1852` object, the `CardanoShelley` class shall be
 **Code example**
 
     import binascii
-    from bip_utils import Bip44Changes, Bip44Levels, Cip1852Coins, Cip1852
+    from bip_utils_m1 import Bip44Changes, Bip44Levels, Cip1852Coins, Cip1852
     
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"0000000000000000000000000000000000000000")
@@ -209,7 +209,7 @@ the staking keys.
 **Code example**
 
     import binascii
-    from bip_utils import Bip44Changes, CardanoShelley, Cip1852Coins, Cip1852
+    from bip_utils_m1 import Bip44Changes, CardanoShelley, Cip1852Coins, Cip1852
     
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"0000000000000000000000000000000000000000")
@@ -275,7 +275,7 @@ The CIP-1852 coins to be used in this case are `Cip1852Coins.CARDANO_ICARUS` or 
 
 **Code example**
 
-    from bip_utils import Bip44Changes, CardanoIcarusSeedGenerator, CardanoShelley, Cip1852Coins, Cip1852
+    from bip_utils_m1 import Bip44Changes, CardanoIcarusSeedGenerator, CardanoShelley, Cip1852Coins, Cip1852
     
     # Generate seed from mnemonic using CardanoIcarusSeedGenerator
     mnemonic = "cost dash dress stove morning robust group affair stomach vacant route volume yellow salute laugh"
@@ -314,7 +314,7 @@ The CIP-1852 coins to be used in this case are `Cip1852Coins.CARDANO_LEDGER` or 
 
 **Code example**
 
-    from bip_utils import Bip39SeedGenerator, Bip44Changes, CardanoShelley, Cip1852Coins, Cip1852
+    from bip_utils_m1 import Bip39SeedGenerator, Bip44Changes, CardanoShelley, Cip1852Coins, Cip1852
     
     # Generate seed from mnemonic using Bip39SeedGenerator
     mnemonic = "cost dash dress stove morning robust group affair stomach vacant route volume yellow salute laugh"

@@ -22,7 +22,7 @@
 import binascii
 import unittest
 
-from bip_utils import (
+from bip_utils_m1 import (
     DataBytes, Ed25519MoneroPrivateKey, Ed25519MoneroPublicKey, MoneroKeyError, MoneroPrivateKey, MoneroPublicKey
 )
 from tests.ecc.test_ecc import (

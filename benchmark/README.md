@@ -14,7 +14,7 @@ First of all, install *codetimimg* if not yet installed (minimum required versio
 
     pip install codetiming~=1.2
 
-And *bip_utils* itself.\
+And *bip_utils_m1* itself.\
 Then, set the benchmark variables by editing the *TestsConf* class at the beginning of *benchmark.py* and run the file from this folder:
 
     python ./benchmark.py

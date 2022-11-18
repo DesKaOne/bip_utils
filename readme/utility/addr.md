@@ -6,7 +6,7 @@ The address library allows encoding/decoding addresses for all the supported coi
 **Code example (coins based on the secp256k1 curve)**
 
     import binascii
-    from bip_utils import *
+    from bip_utils_m1 import *
     
     # Public key bytes or a public key object can be used
     pub_key = binascii.unhexlify(b"022f469a1b5498da2bc2f1e978d1e4af2ce21dd10ae5de64e4081e062f6fc6dca2")
@@ -133,7 +133,7 @@ The address library allows encoding/decoding addresses for all the supported coi
 **Code example (coins based on the ed25519 curve)**
 
     import binascii
-    from bip_utils import *
+    from bip_utils_m1 import *
     
     # Public key bytes or a public key object can be used
     pub_key = binascii.unhexlify(b"00dff41688eadfb8574c8fbfeb8707e07ecf571e96e929c395cc506839cc3ef832")
@@ -190,7 +190,7 @@ The address library allows encoding/decoding addresses for all the supported coi
 **Code example (coins based on the ed25519-blake2b curve)**
     
     import binascii
-    from bip_utils import *
+    from bip_utils_m1 import *
 
     # Public key bytes or a public key object can be used
     pub_key = binascii.unhexlify(b"00dff41688eadfb8574c8fbfeb8707e07ecf571e96e929c395cc506839cc3ef832")
@@ -205,7 +205,7 @@ The address library allows encoding/decoding addresses for all the supported coi
 **Code example (coins based on the ed25519-monero curve)**
 
     import binascii
-    from bip_utils import *
+    from bip_utils_m1 import *
 
     # Public key bytes or a public key object can be used
     pub_skey = binascii.unhexlify(b"a95d2eb7e157f0a169df0a9c490dcd8e0feefb31bbf1328ca4938592a9d02422")
@@ -247,7 +247,7 @@ The address library allows encoding/decoding addresses for all the supported coi
 **Code example (coins based on the nist256p1 curve)**
 
     import binascii
-    from bip_utils import *
+    from bip_utils_m1 import *
 
     # Public key bytes or a public key object can be used
     pub_key = binascii.unhexlify(b"038ea003d38b3f2043e681f06f56b3864d28d73b4f243aee90ed04a28dbc058c5b")
@@ -270,7 +270,7 @@ The address library allows encoding/decoding addresses for all the supported coi
 **Code example (coins based on the sr25519 curve)**
 
     import binascii
-    from bip_utils import *
+    from bip_utils_m1 import *
 
     # Public key bytes or a public key object can be used
     pub_key = binascii.unhexlify(b"dff41688eadfb8574c8fbfeb8707e07ecf571e96e929c395cc506839cc3ef832")

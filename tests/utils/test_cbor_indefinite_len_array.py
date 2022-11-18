@@ -22,7 +22,7 @@
 import binascii
 import unittest
 
-from bip_utils.utils.misc import CborIndefiniteLenArrayDecoder, CborIndefiniteLenArrayEncoder
+from bip_utils_m1.utils.misc import CborIndefiniteLenArrayDecoder, CborIndefiniteLenArrayEncoder
 
 
 # Test vector

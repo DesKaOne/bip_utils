@@ -21,7 +21,7 @@ The constructed class is the master path, so printing the private key will resul
 **Code example**
 
     import binascii
-    from bip_utils import Bip39SeedGenerator, Bip32Slip10Secp256k1
+    from bip_utils_m1 import Bip39SeedGenerator, Bip32Slip10Secp256k1
 
     # Generate from mnemonic
     mnemonic = "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"
@@ -39,7 +39,7 @@ In addition to a seed, it's also possible to specify a derivation path.
 **Code example**
 
     import binascii
-    from bip_utils import Bip32Slip10Secp256k1
+    from bip_utils_m1 import Bip32Slip10Secp256k1
 
     # Derivation path returned: m/0'/1'/2
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -54,7 +54,7 @@ The returned object will be at the same depth of the specified key.
 
 **Code example**
 
-    from bip_utils import Bip32Slip10Secp256k1
+    from bip_utils_m1 import Bip32Slip10Secp256k1
 
     # Private extended key from derivation path m/0'/1 (depth 2)
     key_str = "xprv9wTYmMFdV23N2TdNG573QoEsfRrWKQgWeibmLntzniatZvR9BmLnvSxqu53Kw1UmYPxLgboyZQaXwTCg8MSY3H2EU4pWcQDnRnrVA1xe8fs"
@@ -85,7 +85,7 @@ Therefore, the returned object will have a depth and index equal to zero, a zero
 **Code example**
 
     import binascii
-    from bip_utils import Bip32KeyData, Bip32Slip10Secp256k1, Secp256k1PrivateKey
+    from bip_utils_m1 import Bip32KeyData, Bip32Slip10Secp256k1, Secp256k1PrivateKey
     
     # Construct from private key bytes
     priv_key_bytes = binascii.unhexlify(b"e8f32e723decf4051aefac8e2c93c9c5b214313817cdb01a1494b917c8436b35")
@@ -127,7 +127,7 @@ The constructed class will be a public-only object (see the example in the next 
 **Code example**
 
     import binascii
-    from bip_utils import Bip32KeyError, Bip32KeyData, Bip32Slip10Secp256k1, Secp256k1PublicKey
+    from bip_utils_m1 import Bip32KeyError, Bip32KeyData, Bip32Slip10Secp256k1, Secp256k1PublicKey
     
     # Construct from public key bytes
     pub_key_bytes = binascii.unhexlify(b"0339a36013301597daef41fbe593a02cc513d0b55527ec2df1050e2e8ff49c85c2")
@@ -174,7 +174,7 @@ The `Bip32KeyIndex.HardenIndex` method can be used to make an index hardened.
 **Code example**
 
     import binascii
-    from bip_utils import Bip32Slip10Secp256k1, Bip32KeyIndex
+    from bip_utils_m1 import Bip32Slip10Secp256k1, Bip32KeyIndex
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -254,7 +254,7 @@ In case of a public-only object, only public derivation will be supported (only 
 
 **Code example**
 
-    from bip_utils import Bip32KeyError, Bip32KeyIndex, Bip32Slip10Secp256k1
+    from bip_utils_m1 import Bip32KeyError, Bip32KeyIndex, Bip32Slip10Secp256k1
 
     # Derive from a public extended key
     key_str = "xpub6ASuArnXKPbfEwhqN6e3mwBcDTgzisQN1wXN9BJcM47sSikHjJf3UFHKkNAWbWMiGj7Wf5uMash7SyYq527Hqck2AxYysAA7xmALppuCkwQ"
@@ -299,7 +299,7 @@ However, the `Bip32Slip10Ed25519` and `Bip32Slip10Ed25519Blake2b` classes have s
 For example:
 
     import binascii
-    from bip_utils import Bip32KeyError, Bip32Slip10Ed25519, Bip32Slip10Ed25519Blake2b
+    from bip_utils_m1 import Bip32KeyError, Bip32Slip10Ed25519, Bip32Slip10Ed25519Blake2b
 
     # Seed bytes
     seed_bytes = binascii.unhexlify(b"5eb00bbddcf069084889a8ab9155568165f5c453ccb85e70811aaed6f6da5fc19a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4")
@@ -336,7 +336,7 @@ The Bip32 module allows also to serialize/deserialize public and private keys.
 **Code example**
 
     import binascii
-    from bip_utils import (
+    from bip_utils_m1 import (
         Bip32KeyData, Bip32PublicKeySerializer, Bip32PrivateKeySerializer, Bip32KeyDeserializer,
         Secp256k1PublicKey, Secp256k1PrivateKey
     )
@@ -380,7 +380,7 @@ The Bip32 module allows also to parse derivation paths.
 
 **Code example**
 
-    from bip_utils import Bip32Path, Bip32PathParser, Bip32KeyIndex
+    from bip_utils_m1 import Bip32Path, Bip32PathParser, Bip32KeyIndex
     
     # Parse path, Bip32PathError is raised in case of errors
     path = Bip32PathParser.Parse("0'/1'/2")

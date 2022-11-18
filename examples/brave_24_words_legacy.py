@@ -6,7 +6,7 @@ In fact, instead of computing the seed from the mnemonic as described in BIP39, 
 Therefore, the derived keys and addresses were completely different to other wallets.
 """
 
-from bip_utils import Bip39MnemonicDecoder, Bip44, Bip44Changes, Bip44Coins
+from bip_utils_m1 import Bip39MnemonicDecoder, Bip44, Bip44Changes, Bip44Coins
 
 
 # Mnemonic
